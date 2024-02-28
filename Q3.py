@@ -48,7 +48,7 @@ def handle_client(conn, addr):
         print(f"Disconnected from {addr}")
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT)
+    s.bind((HOST, PORT))
     s.listen()
     print(f"Server listening on {HOST}:{PORT}")
     while True:
